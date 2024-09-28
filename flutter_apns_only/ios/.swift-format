@@ -1,0 +1,10 @@
+{
+  "indentation": {
+    "spaces": 4
+  },
+  "lineBreakAroundMultilineExpressionChainComponents": true,
+  "lineBreakBeforeEachArgument": true,
+  "lineLength": 80,
+  "multiElementCollectionTrailingCommas": true,
+  "version": 1
+}
