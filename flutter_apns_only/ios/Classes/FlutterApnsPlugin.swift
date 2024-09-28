@@ -174,10 +174,12 @@ public class FlutterApnsPlugin: NSObject, FlutterPlugin,
                     "provisional": granted && provisionalRequested,
                 ]
 
-                self.channel.invokeMethod(
-                    "onIosSettingsRegistered",
-                    arguments: map
-                )
+                DispatchQueue.main.async {
+                    self.channel.invokeMethod(
+                        "onIosSettingsRegistered",
+                        arguments: map
+                    )
+                }
             }
 
             result(granted)
